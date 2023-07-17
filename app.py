@@ -7,19 +7,21 @@ app = Flask(__name__)
 # Create the API
 api = Api(app)
 
-########################
 
 class Users(Resource):
     # GET HTTP Method
-    def get(self): 
-        return {'message': 'user 1'} # Return the JSON
+    def get(self):
+        return {'message': 'user 1'}   # Return the JSON
+
 
 class User(Resource):
-    def post(self): 
+    def post(self):
         return {'message': 'test'}
     # Get an CPF, and re-direct to one user
+
     def get(self, cpf):
         return {'message': 'CPF'}
+
 
 # Add an endpoint for the API created with "api = Api(app)"
 api.add_resource(Users, '/users')
