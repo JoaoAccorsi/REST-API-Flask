@@ -16,7 +16,7 @@ class Users(Resource):
 
 class User(Resource):
     def post(self):
-        return {'message': 'test'}
+        return {'message': 'text'}
     # Get an CPF, and re-direct to one user
 
     def get(self, cpf):
