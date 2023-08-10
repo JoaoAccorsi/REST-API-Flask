@@ -28,5 +28,6 @@ api.add_resource(Users, '/users')
 api.add_resource(User, '/user', '/user/<string:cpf>')
 
 # If I execute the code by command line, it will execute this
+# Add the host to listen outside requests too (container IP) - Do the socket bind in all interfaces, and runs with container IP
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
