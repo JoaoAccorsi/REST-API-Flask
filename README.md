@@ -7,5 +7,5 @@ URLs of the application:
 > http://127.0.0.1:5000/users
 > List of users of the application
  
-> http://127.0.0.1:5000/user/cpf
+> > http://127.0.0.1:5000/user/cpf
 > Search for the user's data by CPF
